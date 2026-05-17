@@ -1,0 +1,62 @@
+/*
+ * Design tokens for the admin shell. Override these in your host app or
+ * inside this file to re-skin the panel without touching components.
+ */
+:root {
+  --vn-color-bg: #f7f8fa;
+  --vn-color-surface: #ffffff;
+  --vn-color-surface-2: #f1f3f6;
+  --vn-color-border: #e4e7eb;
+  --vn-color-text: #1f2328;
+  --vn-color-text-muted: #6a737d;
+  --vn-color-primary: #4f46e5;
+  --vn-color-primary-contrast: #ffffff;
+  --vn-color-danger: #dc2626;
+  --vn-color-success: #16a34a;
+
+  --vn-sidebar-bg: #111827;
+  --vn-sidebar-text: #e5e7eb;
+  --vn-sidebar-text-muted: #9ca3af;
+  --vn-sidebar-active-bg: #1f2937;
+  --vn-sidebar-active-text: #ffffff;
+  --vn-sidebar-width: 248px;
+  --vn-sidebar-width-collapsed: 64px;
+
+  --vn-ai-bg: #ffffff;
+  --vn-ai-border: var(--vn-color-border);
+  --vn-ai-width: 360px;
+
+  --vn-radius-sm: 4px;
+  --vn-radius-md: 6px;
+  --vn-radius-lg: 10px;
+
+  --vn-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --vn-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+  --vn-space-1: 4px;
+  --vn-space-2: 8px;
+  --vn-space-3: 12px;
+  --vn-space-4: 16px;
+  --vn-space-5: 24px;
+  --vn-space-6: 32px;
+
+  --vn-topbar-height: 56px;
+
+  --vn-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter,
+    'Helvetica Neue', Arial, sans-serif;
+  --vn-font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+
+  --vn-transition: 0.15s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --vn-color-bg: #0f1115;
+    --vn-color-surface: #161a20;
+    --vn-color-surface-2: #1c2128;
+    --vn-color-border: #2a2f37;
+    --vn-color-text: #e5e7eb;
+    --vn-color-text-muted: #9ca3af;
+    --vn-ai-bg: #161a20;
+  }
+}

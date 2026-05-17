@@ -1,0 +1,10 @@
+src
+node_modules
+tsconfig.json
+tsup.config.ts
+.gitignore
+.editorconfig
+coverage
+*.log
+.cache
+.vite

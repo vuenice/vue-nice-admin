@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@admin/*": ["./*"],
+      "vue-nice-validate": ["./types/vue-nice-validate.d.ts"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue", "env.d.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

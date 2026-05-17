@@ -1,0 +1,52 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+
+html, body, #vuenice-admin {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--vn-font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--vn-color-text);
+  background: var(--vn-color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--vn-color-primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--vn-space-3);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Utility classes used by fallback components */
+.vn-stack { display: flex; flex-direction: column; gap: var(--vn-space-3); }
+.vn-row   { display: flex; align-items: center; gap: var(--vn-space-2); }
+.vn-spacer { flex: 1 1 auto; }
+.vn-muted { color: var(--vn-color-text-muted); }
+
+.vn-card {
+  background: var(--vn-color-surface);
+  border: 1px solid var(--vn-color-border);
+  border-radius: var(--vn-radius-lg);
+  padding: var(--vn-space-5);
+  box-shadow: var(--vn-shadow-sm);
+}
+
+/* Scrollbars in sidebars */
+.vn-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.vn-scroll::-webkit-scrollbar { width: 8px; }
+.vn-scroll::-webkit-scrollbar-thumb {
+  background: rgba(127,127,127,0.3);
+  border-radius: 4px;
+}

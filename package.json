@@ -1,0 +1,82 @@
+{
+  "name": "@vuenice/admin",
+  "version": "0.1.0",
+  "description": "Framework-agnostic Vue 3 admin SPA scaffold + Vite plugin for Laravel, AdonisJS, and any backend with a @vite directive. Built on VueNice components.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Yogesh Galav",
+  "keywords": [
+    "vue",
+    "vue3",
+    "admin",
+    "vite",
+    "vite-plugin",
+    "laravel",
+    "adonisjs",
+    "vuenice",
+    "scaffold"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuenice/admin.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js",
+      "require": "./dist/plugin.cjs"
+    },
+    "./scaffold/*": "./scaffold/*"
+  },
+  "bin": {
+    "vuenice-admin": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "scaffold",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "kleur": "^4.1.5",
+    "node-fetch": "^3.3.2",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "bugs": {
+    "url": "https://github.com/vuenice/admin/issues"
+  },
+  "homepage": "https://github.com/vuenice/admin#readme"
+}
